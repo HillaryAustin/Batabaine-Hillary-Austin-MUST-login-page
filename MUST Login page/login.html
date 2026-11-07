@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | Mbarara University of science And Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <aside class="brand">
+      <div class="logo"><img src="MUST Badge.jpeg" alt="MUST logo"></div>
+      <h1>Welcome to Mbarara University of science And Technology</h1>
+      
+    </aside>
+
+    <main class="forms">
+
+      <!-- REGISTRATION (must come before login) -->
+      <section class="panel" id="register">
+        <h2>Create your account</h2>
+
+        <form action="#" method="post">
+          <div class="row">
+            <div class="field">
+              <label for="first">First name</label>
+              <input type="text" id="first" name="first" placeholder="Hillary" required>
+            </div>
+            <div class="field">
+              <label for="last">Last name</label>
+              <input type="text" id="last" name="last" placeholder="Austin" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="regno">Reg Number</label>
+            <input type="text" id="regno" name="regno" placeholder="e.g. 2026/BSE/001/PS" required>
+          </div>
+
+          <div class="field">
+            <label for="faculty">Faculty</label>
+            <select id="faculty" name="faculty" required>
+              <option value="">Select your faculty</option>
+              <option>FCI</option>
+              <option>FAST</option>
+              <option>MEDICINE</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="pass">Password</label>
+              <input type="password" id="pass" name="pass" minlength="8" placeholder="Min. 8 characters" required>
+            </div>
+            <div class="field">
+              <label for="confirm">Confirm password</label>
+              <input type="password" id="confirm" name="confirm" minlength="8" placeholder="Repeat password" required>
+            </div>
+          </div>
+
+          <div class="options">
+            <label class="check">
+              <input type="checkbox" required>
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+
+          <button type="submit">Create account</button>
+        </form>
+
+        <p class="switch">Already have an account? <a href="#login">Log in</a></p>
+      </section>
+
+      <!-- LOGIN (default view) -->
+      <section class="panel" id="login">
+        <h2>Hello MUST Student</h2>
+        <p class="sub">Sign in to continue to your portal.</p>
+
+        <form action="#" method="post">
+          <div class="field">
+            <label for="user">Registration number or email</label>
+            <input type="text" id="user" name="user" placeholder="Enter your ID or email" required>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+
+          <div class="options">
+            <label class="check"><input type="checkbox" name="remember"> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button type="submit">Log in</button>
+        </form>
+
+        <p class="switch">New to the portal? <a href="#register">Create an account</a></p>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
